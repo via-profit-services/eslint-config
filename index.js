@@ -38,6 +38,7 @@ module.exports = {
     'no-extend-native': 'error',
     'no-global-assign': ['error', { exceptions: [] }],
     'consistent-return': 'warn',
+    'no-multiple-empty-lines': ['warn', { max: 2, maxEOF: 1 }],
     'no-new': 'warn',
 
     'no-redeclare': 'off',
@@ -51,6 +52,7 @@ module.exports = {
     'no-multi-spaces': ['warn', {
       ignoreEOLComments: false,
     }],
+    'object-curly-spacing': ['error', 'always'],
     'no-empty-function': ['error', {
       allow: [
         'arrowFunctions',
@@ -145,6 +147,11 @@ module.exports = {
     'import/order': ['warn', {
       groups: [['builtin', 'external', 'internal']],
       'newlines-between': 'always-and-inside-groups',
+    }],
+    'no-mixed-spaces-and-tabs': 'error',
+    'no-trailing-spaces': ['error', {
+      skipBlankLines: false,
+      ignoreComments: false,
     }],
     'import/max-dependencies': ['warn', { max: 10 }],
     'import/newline-after-import': ['error', { count: 1 }],
