@@ -22,6 +22,7 @@ reactConfig.rules = {
       reset: true,
     }
   ],
+  'react/prop-types': 'off',
   'react/destructuring-assignment': ['error', 'always'],
   'react/no-array-index-key': ['warn'],
   'react/no-multi-comp': ['error', { ignoreStateless: true }],

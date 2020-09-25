@@ -45,7 +45,7 @@ prettier
 2. Установите основной пакет:
 
 ```bash
-yarn add --dev ssh://git@gitlab.com:via-profit/eslint-config-via-profit.git#semver:^0.1.0
+yarn add --dev ssh://git@gitlab.com:via-profit-services/eslint-config.git#semver:^0.1.0
 ```
 
 3. Создайте файл конфигурации `.eslintrc.js` в корневом каталоге проекта со следующим содержимым:
@@ -54,7 +54,7 @@ yarn add --dev ssh://git@gitlab.com:via-profit/eslint-config-via-profit.git#semv
 
 ```js
 module.exports = {
-  extends: ['eslint-config-via-profit'],
+  extends: ['@via-profit-services/eslint-config'],
 }
 ```
 
@@ -62,7 +62,7 @@ module.exports = {
 
 ```js
 module.exports = {
-  extends: ['eslint-config-via-profit/react']
+  extends: ['@via-profit-services/eslint-config/react']
 };
 
 ```
@@ -74,7 +74,7 @@ const path = require('path');
 
 module.exports = {
   extends: [
-    'eslint-config-via-profit/react',
+    '@via-profit-services/eslint-config/react',
   ],
   settings: {
     'import/resolver': {
