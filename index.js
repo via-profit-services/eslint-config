@@ -4,19 +4,19 @@ module.exports = {
     es6: true,
     jest: true,
     node: true,
-    browser: true
+    browser: true,
   },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
-    'prettier/@typescript-eslint'
+    'prettier/@typescript-eslint',
   ],
   plugins: ['@typescript-eslint', 'import'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   rules: {
     'no-undef': 'off',
@@ -58,7 +58,7 @@ module.exports = {
         'arrowFunctions',
         'functions',
         'methods',
-      ]
+      ],
     }],
     // disallow certain object properties
     // https://eslint.org/docs/rules/no-restricted-properties
@@ -121,8 +121,8 @@ module.exports = {
       {
         blankLine: "always",
         prev: "*",
-        next: "return"
-      }
+        next: "return",
+      },
     ],
 
     // require use of the second argument for parseInt()
@@ -165,8 +165,15 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'comma-dangle': ['warn', {
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      imports: 'always-multiline',
+      exports: 'always-multiline',
+      functions: 'always-multiline',
+    }],
   },
   globals: {
-    fetch: false
+    fetch: false,
   },
 };

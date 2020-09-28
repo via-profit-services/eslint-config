@@ -20,13 +20,13 @@ reactConfig.rules = {
       button: true,
       submit: true,
       reset: true,
-    }
+    },
   ],
   'react/prop-types': 'off',
   'react/destructuring-assignment': ['error', 'always'],
   'react/no-array-index-key': ['warn'],
   'react/no-multi-comp': ['error', { ignoreStateless: true }],
-  'react/jsx-indent': ['warn', 2,],
+  'react/jsx-indent': ['warn', 2],
 };
 
 module.exports = reactConfig;
