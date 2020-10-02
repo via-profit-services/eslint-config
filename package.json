@@ -1,6 +1,6 @@
 {
   "name": "@via-profit-services/eslint-config",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "index.js",
   "private": true,
   "description": "ESLint configuration package for Via Profit services projects",
