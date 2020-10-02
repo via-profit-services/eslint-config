@@ -42,7 +42,7 @@ module.exports = {
     'no-new': 'warn',
 
     'no-redeclare': 'off',
-    "@typescript-eslint/no-redeclare": ["error"],
+    '@typescript-eslint/no-redeclare': ['error'],
 
     'no-new-func': 'error',
     'no-multi-str': 'error',
@@ -101,7 +101,7 @@ module.exports = {
         property: 'pow',
         message: 'Use the exponentiation operator (**) instead.',
       }],
-    'no-console': ['warn', { allow: ["warn", "error"] }],
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
     'no-extra-semi': 'warn',
     'no-constructor-return': 'off',
     'default-case': ['warn', { commentPattern: '^no default$' }],
@@ -115,13 +115,15 @@ module.exports = {
     }],
     'valid-typeof': ['error', { requireStringLiterals: true }],
 
+    quotes: ['warn', 'single'],
+
     // Expected blank line before return statement
-    "padding-line-between-statements": [
-      "warn",
+    'padding-line-between-statements': [
+      'warn',
       {
-        blankLine: "always",
-        prev: "*",
-        next: "return",
+        blankLine: 'always',
+        prev: '*',
+        next: 'return',
       },
     ],
 
