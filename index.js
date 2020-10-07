@@ -174,6 +174,13 @@ module.exports = {
       exports: 'always-multiline',
       functions: 'always-multiline',
     }],
+    'max-len': ['warn', 100, 2, {
+      ignoreUrls: true,
+      ignoreComments: false,
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
+    }],
   },
   globals: {
     fetch: false,
