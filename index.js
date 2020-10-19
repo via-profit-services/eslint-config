@@ -4,19 +4,19 @@ module.exports = {
     es6: true,
     jest: true,
     node: true,
-    browser: true
+    browser: true,
   },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
-    'prettier/@typescript-eslint'
+    'prettier/@typescript-eslint',
   ],
   plugins: ['@typescript-eslint', 'import'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2018,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   rules: {
     'no-undef': 'off',
@@ -38,10 +38,11 @@ module.exports = {
     'no-extend-native': 'error',
     'no-global-assign': ['error', { exceptions: [] }],
     'consistent-return': 'warn',
+    'no-multiple-empty-lines': ['warn', { max: 2, maxEOF: 1 }],
     'no-new': 'warn',
 
     'no-redeclare': 'off',
-    "@typescript-eslint/no-redeclare": ["error"],
+    '@typescript-eslint/no-redeclare': ['error'],
 
     'no-new-func': 'error',
     'no-multi-str': 'error',
@@ -51,12 +52,13 @@ module.exports = {
     'no-multi-spaces': ['warn', {
       ignoreEOLComments: false,
     }],
+    'object-curly-spacing': ['error', 'always'],
     'no-empty-function': ['error', {
       allow: [
         'arrowFunctions',
         'functions',
         'methods',
-      ]
+      ],
     }],
     // disallow certain object properties
     // https://eslint.org/docs/rules/no-restricted-properties
@@ -99,7 +101,7 @@ module.exports = {
         property: 'pow',
         message: 'Use the exponentiation operator (**) instead.',
       }],
-    'no-console': ['warn', { allow: ["warn", "error"] }],
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
     'no-extra-semi': 'warn',
     'no-constructor-return': 'off',
     'default-case': ['warn', { commentPattern: '^no default$' }],
@@ -113,14 +115,16 @@ module.exports = {
     }],
     'valid-typeof': ['error', { requireStringLiterals: true }],
 
+    quotes: ['warn', 'single'],
+
     // Expected blank line before return statement
-    "padding-line-between-statements": [
-      "warn",
+    'padding-line-between-statements': [
+      'warn',
       {
-        blankLine: "always",
-        prev: "*",
-        next: "return"
-      }
+        blankLine: 'always',
+        prev: '*',
+        next: 'return',
+      },
     ],
 
     // require use of the second argument for parseInt()
@@ -130,7 +134,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/adjacent-overload-signatures': 'error',
-    '@typescript-eslint/no-unused-vars': 'warn',
+    '@typescript-eslint/no-unused-vars': ['warn', { argsIgnorePattern: '_' }],
     '@typescript-eslint/naming-convention': 'off',
     '@typescript-eslint/interface-name-prefix': 'off',
     'import/export': 'error',
@@ -146,6 +150,11 @@ module.exports = {
       groups: [['builtin', 'external', 'internal']],
       'newlines-between': 'always-and-inside-groups',
     }],
+    'no-mixed-spaces-and-tabs': 'error',
+    'no-trailing-spaces': ['error', {
+      skipBlankLines: false,
+      ignoreComments: false,
+    }],
     'import/max-dependencies': ['warn', { max: 10 }],
     'import/newline-after-import': ['error', { count: 1 }],
     'import/extensions': [
@@ -158,8 +167,22 @@ module.exports = {
         tsx: 'never',
       },
     ],
+    'comma-dangle': ['warn', {
+      arrays: 'always-multiline',
+      objects: 'always-multiline',
+      imports: 'always-multiline',
+      exports: 'always-multiline',
+      functions: 'always-multiline',
+    }],
+    'max-len': ['warn', 100, 2, {
+      ignoreUrls: true,
+      ignoreComments: false,
+      ignoreRegExpLiterals: true,
+      ignoreStrings: true,
+      ignoreTemplateLiterals: true,
+    }],
   },
   globals: {
-    fetch: false
+    fetch: false,
   },
 };

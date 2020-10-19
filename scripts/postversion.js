@@ -12,7 +12,7 @@ const filesToContentReplace = ['./README.md'];
 const replacements = [
   {
     name: 'version number of install info',
-    regexp: /(?<=eslint-config-via-profit.git#semver:\^)\d+\.\d+\.\d+/,
+    regexp: /(?<=via-profit-services\/eslint-config.git#semver:\^)\d+\.\d+\.\d+/,
     replacement: newPackageVersion,
   },
   {
