@@ -1,5 +1,5 @@
 module.exports = {
   root: true,
-  extends: ["./index.js"],
-  rules: {}
+  extends: ['./index.js'],
+  rules: {},
 }
