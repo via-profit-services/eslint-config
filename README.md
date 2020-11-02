@@ -2,7 +2,7 @@
 
 ![via-profit-eslint-cover](./assets/via-profit-eslint-cover.png)
 
-> ESlint конфигурация для проктов [via-profit-services](https://gitlab.com/via-profit-services)
+> ESlint конфигурация для проктов [via-profit-services](https://github.com/via-profit-services)
 
 
 ![version-badge](https://img.shields.io/static/v1?label=version&message=0.1.7&color=blue)
@@ -45,7 +45,7 @@ prettier
 2. Установите основной пакет:
 
 ```bash
-yarn add --dev ssh://git@gitlab.com:via-profit-services/eslint-config.git#semver:^0.1.7
+yarn add --dev ssh://git@github.com:via-profit-services/eslint-config.git#semver:^0.1.7
 ```
 
 3. Создайте файл конфигурации `.eslintrc.js` в корневом каталоге проекта со следующим содержимым:
