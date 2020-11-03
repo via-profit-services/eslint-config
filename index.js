@@ -129,7 +129,7 @@ module.exports = {
 
     // require use of the second argument for parseInt()
     radix: 'error',
-    '@typescript-eslint/no-use-before-define': ['error', { functions: true, classes: true, variables: true, typedefs: true }],
+    '@typescript-eslint/no-use-before-define': ['error', { functions: true, classes: true, variables: false, typedefs: true }],
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',

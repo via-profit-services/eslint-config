@@ -1,6 +1,6 @@
 {
   "name": "@via-profit-services/eslint-config",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "main": "index.js",
   "description": "ESLint configuration package for Via Profit services projects",
   "support": "https://via-profit.ru",
@@ -11,7 +11,7 @@
     "release:minor": "yarn version --minor",
     "release:major": "yarn version --major",
     "release:prerelease": "yarn version --prerelease",
-    "publish": "npm publish --access public"
+    "publish:npm": "npm publish --access public"
   },
   "keywords": [
     "eslint",
