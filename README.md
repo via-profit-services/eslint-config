@@ -5,7 +5,7 @@
 > ESlint конфигурация для проктов [via-profit-services](https://github.com/via-profit-services)
 
 
-![version-badge](https://img.shields.io/static/v1?label=version&message=0.1.8&color=blue)
+![version-badge](https://img.shields.io/static/v1?label=version&message=0.1.9&color=blue)
 
 ## Зависимости
  - [eslint](https://www.npmjs.com/package/eslint)
