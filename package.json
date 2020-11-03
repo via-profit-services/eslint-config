@@ -6,7 +6,7 @@
   "support": "https://via-profit.ru",
   "scripts": {
     "lint": "eslint --fix --ext .js --ext .ts .",
-    "postversion": "node ./scripts/postversion.js",
+    "postversion": "git push --tags",
     "release:patch": "yarn version --patch",
     "release:minor": "yarn version --minor",
     "release:major": "yarn version --major",
