@@ -45,7 +45,7 @@ prettier
 2. Установите основной пакет:
 
 ```bash
-yarn add --dev ssh://git@github.com:via-profit-services/eslint-config.git#semver:^0.1.7
+yarn add --dev @via-profit-services/eslint-config
 ```
 
 3. Создайте файл конфигурации `.eslintrc.js` в корневом каталоге проекта со следующим содержимым:
