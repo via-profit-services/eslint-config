@@ -1,5 +1,4 @@
 module.exports = {
-  root: true,
   env: {
     es6: true,
     jest: true,
@@ -157,16 +156,10 @@ module.exports = {
     }],
     'import/max-dependencies': ['warn', { max: 10 }],
     'import/newline-after-import': ['error', { count: 1 }],
-    'import/extensions': [
-      'error',
-      'ignorePackages',
-      {
-        js: 'never',
-        jsx: 'never',
-        ts: 'never',
-        tsx: 'never',
-      },
-    ],
+    'import/extensions': ['error', 'never', {
+      json: 'always',
+      graphql: 'always',
+    }],
     'comma-dangle': ['warn', {
       arrays: 'always-multiline',
       objects: 'always-multiline',
@@ -181,6 +174,13 @@ module.exports = {
       ignoreStrings: true,
       ignoreTemplateLiterals: true,
     }],
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.ts', '.mjs', '.js', '.json', '.graphql', '.d.ts'],
+      },
+    },
   },
   globals: {
     fetch: false,
