@@ -148,6 +148,10 @@ module.exports = {
     'import/order': ['warn', {
       groups: [['builtin', 'external', 'internal']],
       'newlines-between': 'always-and-inside-groups',
+      alphabetize: {
+        order: 'asc',
+        caseInsensitive: true,
+      },
     }],
     'no-mixed-spaces-and-tabs': 'error',
     'no-trailing-spaces': ['error', {
