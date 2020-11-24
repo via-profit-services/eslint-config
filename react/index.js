@@ -27,6 +27,7 @@ reactConfig.rules = {
   'react/no-array-index-key': ['warn'],
   'react/no-multi-comp': ['error', { ignoreStateless: true }],
   'react/jsx-indent': ['warn', 2],
+  'import/max-dependencies': ['warn', { max: 20 }],
 };
 
 module.exports = reactConfig;

@@ -49,44 +49,26 @@ prettier
 yarn add --dev @via-profit-services/eslint-config
 ```
 
-3. Создайте файл конфигурации `.eslintrc.js` в корневом каталоге проекта со следующим содержимым:
+3. Создайте файл конфигурации `.eslintrc` в корневом каталоге проекта со следующим содержимым:
 
-#### Для Nodejs (сервер)
-
-```js
-module.exports = {
-  extends: ['@via-profit-services/eslint-config'],
+```json
+{
+  "extends": [
+    "@via-profit-services/eslint-config"
+  ]
 }
 ```
 
-#### Для Nodejs и React
+#### Для React
 
-```js
-module.exports = {
-  extends: ['@via-profit-services/eslint-config/react']
-};
-
+```json
+{
+  "extends": [
+    "@via-profit-services/eslint-config/react"
+  ]
+}
 ```
 
-Если в проекте применяются алиасы, то добавьте соответствующие настройки:
-
-```js
-const path = require('path');
-
-module.exports = {
-  extends: [
-    '@via-profit-services/eslint-config/react',
-  ],
-  settings: {
-    'import/resolver': {
-      webpack: {
-        config: path.resolve(__dirname, './webpack/webpack.config.base.js'), // <-- Path to your local webpack config
-      },
-    },
-  },
-};
-
-```
 
 4. Создайте файл `.eslintignore` в корневом каталоге проекта:
 
