@@ -27,6 +27,7 @@ reactConfig.rules = {
   'react/no-array-index-key': ['warn'],
   'react/no-multi-comp': ['error', { ignoreStateless: true }],
   'react/jsx-indent': ['warn', 2],
+  'react/jsx-pascal-case': ['warn', { allowAllCaps: true, ignore: [] }],
   'import/max-dependencies': ['warn', { max: 20 }],
 };
 
