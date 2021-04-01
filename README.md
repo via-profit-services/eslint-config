@@ -2,17 +2,17 @@
 
 ![via-profit-eslint-cover](./assets/via-profit-eslint-cover.png)
 
-> ESlint конфигурация для проктов [via-profit-services](https://github.com/via-profit-services)
+> ESlint configuration for a [via-profit-services](https://github.com/via-profit-services) packages
 
 
 ![npm (scoped)](https://img.shields.io/npm/v/@via-profit-services/eslint-config?color=blue)
-![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@via-profit-services/eslint-config?color=red)
 
-## Зависимости
+## Peer Dependencies
  - [eslint](https://www.npmjs.com/package/eslint)
  - [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
  - [eslint-config-standard](https://www.npmjs.com/package/eslint-config-standard)
  - [eslint-import-resolver-webpack](https://www.npmjs.com/package/eslint-import-resolver-webpack)
+ - [eslint-import-resolver-node](https://www.npmjs.com/package/eslint-import-resolver-node)
  - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
  - [eslint-plugin-node](https://www.npmjs.com/package/eslint-plugin-node)
  - [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier)
@@ -22,9 +22,9 @@
  - [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser)
  - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
 
-## Установка
+## Installation
 
-1. Установите зависимости:
+1. Install peer dependencies:
 
 ```bash
 yarn add --dev \
@@ -34,6 +34,7 @@ eslint \
 eslint-config-prettier \
 eslint-config-standard \
 eslint-import-resolver-webpack \
+eslint-import-resolver-node \
 eslint-plugin-import \
 eslint-plugin-node \
 eslint-plugin-prettier \
@@ -43,13 +44,13 @@ eslint-plugin-react \
 prettier
 ```
 
-2. Установите основной пакет:
+2. Install the common package:
 
 ```bash
 yarn add --dev @via-profit-services/eslint-config
 ```
 
-3. Создайте файл конфигурации `.eslintrc` в корневом каталоге проекта со следующим содержимым:
+3. Make the eslint config file `.eslintrc` in project root with following contents:
 
 ```json
 {
@@ -59,7 +60,7 @@ yarn add --dev @via-profit-services/eslint-config
 }
 ```
 
-#### Для React
+#### For React environment
 
 ```json
 {
@@ -70,7 +71,7 @@ yarn add --dev @via-profit-services/eslint-config
 ```
 
 
-4. Создайте файл `.eslintignore` в корневом каталоге проекта:
+4. Make the `.eslintignore` file in project root with following contents:
 
 ```
 /scripts/**
@@ -79,3 +80,5 @@ yarn add --dev @via-profit-services/eslint-config
 /build/**
 .eslintrc.js
 ```
+
+5. Do not forgot restart your IDE
