@@ -1,3 +1,9 @@
 .vscode
 assets
 scripts
+.yarn/*
+/yarn.lock
+/yarn-error.lock
+/dump.rdb
+/package.tgz
+/package-*.tgz
