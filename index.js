@@ -51,6 +51,7 @@ module.exports = {
     'no-multi-spaces': ['warn', {
       ignoreEOLComments: false,
     }],
+    'arrow-parens': 'as-needed',
     'object-curly-spacing': ['error', 'always'],
     'no-empty-function': ['error', {
       allow: [
@@ -145,10 +146,10 @@ module.exports = {
     'import/no-self-import': 'error',
     'import/prefer-default-export': 'warn',
     'import/no-named-as-default': 'error',
-    'import/order': ['warn', {
-      groups: [['builtin', 'external', 'internal']],
-      'newlines-between': 'always-and-inside-groups',
-    }],
+    // 'import/order': ['warn', {
+    //   groups: [['builtin', 'external', 'internal']],
+    //   'newlines-between': 'always-and-inside-groups',
+    // }],
     'no-mixed-spaces-and-tabs': 'error',
     'no-trailing-spaces': ['error', {
       skipBlankLines: false,
